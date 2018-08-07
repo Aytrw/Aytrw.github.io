@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="前向星 介于邻接矩阵和邻接表之间的一种比较均衡的存储结构  为什么会有前向星 对于图的存储结构,我们通常使用两种储存结构:第一种：邻接矩阵 (Adjacency Matrix)邻接矩阵是一种非常占用空间的储存结构当图中有很多结点的时候,比方说23333个就得开一个数组A[23333][23333],不爆才怪！第二种：邻接表 (Adjacency List)邻接表虽然不占用多大空间但其的指针操作非常">
+<meta name="description" content="前向星是什么 是一种介于邻接矩阵和邻接表之间的一种比较均衡的存储结构是一种特殊的边集数组,其中每条边按照起点排序并且记录下以某个点为起点的所有边在数组中的起始位置  前向星有什么用 对于图的存储结构,我们通常使用两种储存结构:第一种：邻接矩阵 (Adjacency Matrix)邻接矩阵是一种非常占用空间的储存结构当图中有很多结点的时候,比方说23333个就得开一个数组A[23333][23333">
 <meta name="keywords" content="数据结构">
 <meta property="og:type" content="article">
 <meta property="og:title" content="前向星">
 <meta property="og:url" content="http://yoursite.com/2018/08/06/前向星/index.html">
 <meta property="og:site_name" content="Aytrwの日常">
-<meta property="og:description" content="前向星 介于邻接矩阵和邻接表之间的一种比较均衡的存储结构  为什么会有前向星 对于图的存储结构,我们通常使用两种储存结构:第一种：邻接矩阵 (Adjacency Matrix)邻接矩阵是一种非常占用空间的储存结构当图中有很多结点的时候,比方说23333个就得开一个数组A[23333][23333],不爆才怪！第二种：邻接表 (Adjacency List)邻接表虽然不占用多大空间但其的指针操作非常">
+<meta property="og:description" content="前向星是什么 是一种介于邻接矩阵和邻接表之间的一种比较均衡的存储结构是一种特殊的边集数组,其中每条边按照起点排序并且记录下以某个点为起点的所有边在数组中的起始位置  前向星有什么用 对于图的存储结构,我们通常使用两种储存结构:第一种：邻接矩阵 (Adjacency Matrix)邻接矩阵是一种非常占用空间的储存结构当图中有很多结点的时候,比方说23333个就得开一个数组A[23333][23333">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-08-07T12:55:02.696Z">
+<meta property="og:updated_time" content="2018-08-07T15:13:13.652Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="前向星">
-<meta name="twitter:description" content="前向星 介于邻接矩阵和邻接表之间的一种比较均衡的存储结构  为什么会有前向星 对于图的存储结构,我们通常使用两种储存结构:第一种：邻接矩阵 (Adjacency Matrix)邻接矩阵是一种非常占用空间的储存结构当图中有很多结点的时候,比方说23333个就得开一个数组A[23333][23333],不爆才怪！第二种：邻接表 (Adjacency List)邻接表虽然不占用多大空间但其的指针操作非常">
+<meta name="twitter:description" content="前向星是什么 是一种介于邻接矩阵和邻接表之间的一种比较均衡的存储结构是一种特殊的边集数组,其中每条边按照起点排序并且记录下以某个点为起点的所有边在数组中的起始位置  前向星有什么用 对于图的存储结构,我们通常使用两种储存结构:第一种：邻接矩阵 (Adjacency Matrix)邻接矩阵是一种非常占用空间的储存结构当图中有很多结点的时候,比方说23333个就得开一个数组A[23333][23333">
 
 
 
@@ -352,16 +352,16 @@
       
 
       
-        <h1 id="前向星"><a href="#前向星" class="headerlink" title="前向星"></a>前向星</h1><blockquote>
-<p>介于邻接矩阵和邻接表之间的一种比较均衡的存储结构</p>
+        <h1 id="前向星是什么"><a href="#前向星是什么" class="headerlink" title="前向星是什么"></a>前向星是什么</h1><blockquote>
+<p>是一种介于邻接矩阵和邻接表之间的一种比较均衡的<code>存储结构</code><br>是一种特殊的<code>边集数组</code>,其中每条边按照<code>起点</code>排序<br>并且记录下<strong>以某个点为起点的所有边</strong>在数组中的<code>起始位置</code></p>
 </blockquote>
-<h1 id="为什么会有前向星"><a href="#为什么会有前向星" class="headerlink" title="为什么会有前向星"></a>为什么会有前向星</h1><blockquote>
-<p>对于图的存储结构,我们通常使用两种储存结构:<br><strong>第一种：</strong><code>邻接矩阵 (Adjacency Matrix)</code><br>邻接矩阵是一种非常占用空间的储存结构<br>当图中有很多结点的时候,比方说23333个<br>就得开一个数组A[23333][23333],不爆才怪！<br><strong>第二种：</strong><code>邻接表 (Adjacency List)</code><br>邻接表虽然不占用多大空间<br>但其的指针操作非常麻烦，写起来也很困难<br>于是我们就想出了一种较为均衡的储存结构<code>前向星</code></p>
+<h1 id="前向星有什么用"><a href="#前向星有什么用" class="headerlink" title="前向星有什么用"></a>前向星有什么用</h1><blockquote>
+<p>对于图的存储结构,我们通常使用两种储存结构:<br><strong>第一种：</strong><code>邻接矩阵 (Adjacency Matrix)</code><br>邻接矩阵是一种非常占用空间的储存结构<br>当图中有很多结点的时候,比方说23333个<br>就得开一个数组A[23333][23333],不爆才怪！<br><strong>第二种：</strong><code>邻接表 (Adjacency List)</code><br>邻接表虽然不占用多大空间<br>但其的指针操作非常麻烦，写起来也很困难<br>于是我们就想出了一种较为均衡的储存结构<code>前向星</code><br><strong>那么前向星具体有什么好处呢？</strong><br>我们可以用O(1)的时间找到以i为起点的第一条边<br>我们也可以用O(len[i])的时间找到以i为起点的所有边<br>对于图的DFS,BFS,SPFA,前向星便再适合不过了</p>
 </blockquote>
 <h1 id="前向星的表示方法"><a href="#前向星的表示方法" class="headerlink" title="前向星的表示方法"></a>前向星的表示方法</h1><blockquote>
-<p>前向星的构造方法相对是比较简单的<br>主要通过储存<code>边的信息</code>来储存一张图<br>我们可以分下面2个步骤来进行操作:</p>
+<p>前向星的构造方法相对是比较简单的<br>主要通过储存<code>边的信息</code>来储存一张图<br>我们可以分下面3个步骤来进行操作:</p>
 <blockquote>
-<p>1.读入每条边的信息，将边的信息储存起来<br>2.将边按照起点顺序来排列</p>
+<p>1.读入每条边的信息，将边的信息储存起来<br>2.将边按照起点顺序来排列<br>3.储存以i为起点的第一条边在边集中的下标</p>
 </blockquote>
 </blockquote>
 <h1 id="前向星构造的代码实现"><a href="#前向星构造的代码实现" class="headerlink" title="前向星构造的代码实现"></a>前向星构造的代码实现</h1><blockquote>
@@ -377,7 +377,7 @@
 <p>排序完之后的情况：<br>为了方便查询,我们设置一个数组head[1..m]<br>head[i]表示以i为起点的第一条边在e中的下标<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">memset</span>(head,<span class="number">-1</span>,<span class="keyword">sizeof</span>(head));<span class="comment">//首先将head初始化</span></span><br><span class="line">head[ed[<span class="number">0</span>].start] = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;m;i++)&#123;</span><br><span class="line">  <span class="keyword">if</span>(ed[i].start != ed[i<span class="number">-1</span>].start) <span class="comment">//结点i的第一条边</span></span><br><span class="line">    head[ed[i].start] = i; <span class="comment">//保存在e中的下标</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 </blockquote>
 <blockquote>
-<p>到这里构造就结束了,当然我们还需要遍历一波<br>假设结点数为n,边数为m,并且边的信息已经输入好了<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++)&#123;</span><br><span class="line">  <span class="keyword">for</span>(<span class="keyword">int</span> j=head[i];ed[j].start == i &amp;&amp; j&lt;=m;j++)&#123;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"边的起点"</span> &lt;&lt; ed[j].start &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"边的终点"</span> &lt;&lt; ed[j].end &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"边的权值"</span> &lt;&lt; ed[j].w &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>到这里构造就结束了,当然我们还需要遍历一波<br>假设结点数为n,边数为m,并且边的信息已经输入好了<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++)&#123;</span><br><span class="line">  <span class="keyword">for</span>(<span class="keyword">int</span> j=head[i];ed[j].start == i &amp;&amp; j&lt;m;j++)&#123;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"边的起点"</span> &lt;&lt; ed[j].start &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"边的终点"</span> &lt;&lt; ed[j].end &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"边的权值"</span> &lt;&lt; ed[j].w &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 </blockquote>
 
       
@@ -405,6 +405,22 @@
       
       
 
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/08/07/链式前向星/" rel="prev" title="链式前向星">
+                链式前向星 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
       
 
       
@@ -478,7 +494,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -533,7 +549,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前向星"><span class="nav-number">1.</span> <span class="nav-text">前向星</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#为什么会有前向星"><span class="nav-number">2.</span> <span class="nav-text">为什么会有前向星</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#前向星的表示方法"><span class="nav-number">3.</span> <span class="nav-text">前向星的表示方法</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#前向星构造的代码实现"><span class="nav-number">4.</span> <span class="nav-text">前向星构造的代码实现</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前向星是什么"><span class="nav-number">1.</span> <span class="nav-text">前向星是什么</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#前向星有什么用"><span class="nav-number">2.</span> <span class="nav-text">前向星有什么用</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#前向星的表示方法"><span class="nav-number">3.</span> <span class="nav-text">前向星的表示方法</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#前向星构造的代码实现"><span class="nav-number">4.</span> <span class="nav-text">前向星构造的代码实现</span></a></li></ol></div>
             
 
           </div>
