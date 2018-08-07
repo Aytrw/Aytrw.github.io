@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="#链式前向星  前向星虽然好,但实际上时间复杂度也很高,因为有排序的过程假设边的个数是n,那么时间复杂度也要达到O(nlogn)于是大牛们为了避免排序,发明了一个类似邻接表的前向星一种叫做链式前向星（Linked Forward Star）就诞生了  #命名和来历  根据度娘的结果,链式前向星似乎是一个叫Malash的人命名的这个数据结构据推测是由Jason911或者其他神牛发明的而Malash只">
+<meta name="description" content="链式前向星 前向星虽然好,但实际上时间复杂度也很高,因为有排序的过程假设边的个数是n,那么时间复杂度也要达到O(nlogn)于是大牛们为了避免排序,发明了一个类似邻接表的前向星一种叫做链式前向星（Linked Forward Star）就诞生了  命名和来历 根据度娘的结果,链式前向星似乎是一个叫Malash的人命名的这个数据结构据推测是由Jason911或者其他神牛发明的而Malash只是命名,">
 <meta name="keywords" content="数据结构">
 <meta property="og:type" content="article">
 <meta property="og:title" content="链式前向星">
 <meta property="og:url" content="http://yoursite.com/2018/08/07/链式前向星/index.html">
 <meta property="og:site_name" content="Aytrwの日常">
-<meta property="og:description" content="#链式前向星  前向星虽然好,但实际上时间复杂度也很高,因为有排序的过程假设边的个数是n,那么时间复杂度也要达到O(nlogn)于是大牛们为了避免排序,发明了一个类似邻接表的前向星一种叫做链式前向星（Linked Forward Star）就诞生了  #命名和来历  根据度娘的结果,链式前向星似乎是一个叫Malash的人命名的这个数据结构据推测是由Jason911或者其他神牛发明的而Malash只">
+<meta property="og:description" content="链式前向星 前向星虽然好,但实际上时间复杂度也很高,因为有排序的过程假设边的个数是n,那么时间复杂度也要达到O(nlogn)于是大牛们为了避免排序,发明了一个类似邻接表的前向星一种叫做链式前向星（Linked Forward Star）就诞生了  命名和来历 根据度娘的结果,链式前向星似乎是一个叫Malash的人命名的这个数据结构据推测是由Jason911或者其他神牛发明的而Malash只是命名,">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-08-07T15:32:13.132Z">
+<meta property="og:updated_time" content="2018-08-07T15:37:38.825Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="链式前向星">
-<meta name="twitter:description" content="#链式前向星  前向星虽然好,但实际上时间复杂度也很高,因为有排序的过程假设边的个数是n,那么时间复杂度也要达到O(nlogn)于是大牛们为了避免排序,发明了一个类似邻接表的前向星一种叫做链式前向星（Linked Forward Star）就诞生了  #命名和来历  根据度娘的结果,链式前向星似乎是一个叫Malash的人命名的这个数据结构据推测是由Jason911或者其他神牛发明的而Malash只">
+<meta name="twitter:description" content="链式前向星 前向星虽然好,但实际上时间复杂度也很高,因为有排序的过程假设边的个数是n,那么时间复杂度也要达到O(nlogn)于是大牛们为了避免排序,发明了一个类似邻接表的前向星一种叫做链式前向星（Linked Forward Star）就诞生了  命名和来历 根据度娘的结果,链式前向星似乎是一个叫Malash的人命名的这个数据结构据推测是由Jason911或者其他神牛发明的而Malash只是命名,">
 
 
 
@@ -352,15 +352,21 @@
       
 
       
-        <p>#链式前向星</p>
-<blockquote>
-<p>前向星虽然好,但实际上时间复杂度也很高,因为有排序的过程<br>假设边的个数是n,那么时间复杂度也要达到O(nlogn)<br>于是大牛们为了避免排序,发明了一个类似邻接表的前向星<br>一种叫做<code>链式前向星（Linked Forward Star）就诞生了</code></p>
+        <h1 id="链式前向星"><a href="#链式前向星" class="headerlink" title="链式前向星"></a>链式前向星</h1><blockquote>
+<p>前向星虽然好,但实际上时间复杂度也很高,因为有排序的过程<br>假设边的个数是n,那么时间复杂度也要达到O(nlogn)<br>于是大牛们为了避免排序,发明了一个类似邻接表的前向星<br>一种叫做<code>链式前向星（Linked Forward Star）</code>就诞生了</p>
 </blockquote>
-<p>#命名和来历</p>
-<blockquote>
-<p>根据度娘的结果,链式前向星似乎是一个叫Malash的人命名的<br>这个数据结构据推测是由Jason911或者其他神牛发明的<br>而Malash只是命名,似乎也有叫next数组前向星的<br>这点是在<a href="https://malash.me/200910/linked-forward-star/偶然发现的" target="_blank" rel="noopener">https://malash.me/200910/linked-forward-star/偶然发现的</a><br>本文也是基于这篇文章的,当然也参考了一些其他的博客<br>不得不说对这些大牛只能%%%%%了</p>
+<h1 id="命名和来历"><a href="#命名和来历" class="headerlink" title="命名和来历"></a>命名和来历</h1><blockquote>
+<p>根据度娘的结果,链式前向星似乎是一个叫Malash的人命名的<br>这个数据结构据推测是由Jason911或者其他神牛发明的<br>而Malash只是命名,似乎也有叫next数组前向星的<br>这点是在 <a href="https://malash.me/200910/linked-forward-star/" target="_blank" rel="noopener">https://malash.me/200910/linked-forward-star/</a> 偶然发现的<br>本文也是基于这篇文章的,当然也参考了一些其他的博客<br><strong>不得不说对这些大牛只能%%%%%了</strong></p>
 </blockquote>
-<p>#e</p>
+<h1 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h1><blockquote>
+<p>首先,为了避免排序,我们就得在边集上下功夫<br>我们可以在每条边里加一个属性<code>next</code><br>edge[i].next表示与第i条边同起点的下一条边的位置<br><code>`c++
+struct Edge{
+    int next; 
+    int end; //终点
+    int w; //权值
+};
+Edge edge[23333];</code></p>
+</blockquote>
 
       
     </div>
@@ -451,8 +457,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -512,6 +527,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#链式前向星"><span class="nav-number">1.</span> <span class="nav-text">链式前向星</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#命名和来历"><span class="nav-number">2.</span> <span class="nav-text">命名和来历</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#代码实现"><span class="nav-number">3.</span> <span class="nav-text">代码实现</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
