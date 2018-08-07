@@ -535,6 +535,9 @@ Edge edge[23333];</code></p>
 <blockquote>
 <p>到这里构造就结束了,当然我们还需要遍历一波<br>假设结点数为n,边数为m,并且边的信息已经输入好了<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++)&#123;</span><br><span class="line">  <span class="keyword">for</span>(<span class="keyword">int</span> j=head[i];ed[j].start == i &amp;&amp; j&lt;m;j++)&#123; </span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"边的起点"</span> &lt;&lt; ed[j].start &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"边的终点"</span> &lt;&lt; ed[j].end &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"边的权值"</span> &lt;&lt; ed[j].w &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//当然,也可以记录一下以i为起点的边的个数,将其设为遍历条件</span></span><br><span class="line"><span class="comment">//这里我就不贴出完整代码了</span></span><br></pre></td></tr></table></figure></p>
 </blockquote>
+<h1 id="前向星的实例"><a href="#前向星的实例" class="headerlink" title="前向星的实例"></a>前向星的实例</h1><blockquote>
+<p>代码是写出来了,但总觉得有些不理解,下面给出一个例子<br>给定如图的一张无向图：<br><img src="/2018/08/06/前向星/tu.png" alt="图1-1"></p>
+</blockquote>
 
           
         
