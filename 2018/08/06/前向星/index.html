@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="数据结构," />
 
 
 
@@ -79,13 +79,18 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Aytrwの日常">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="前向星 介于邻接矩阵和邻接表之间的一种比较均衡的存储结构  为什么会有前向星 对于图的存储结构,我们通常使用两种储存结构:第一种：邻接矩阵 (Adjacency Matrix)邻接矩阵是一种非常占用空间的储存结构当图中有很多结点的时候,比方说23333个就得开一个数组A[23333][23333],不爆才怪！第二种：邻接表 (Adjacency List)邻接表虽然不占用多大空间但其的指针操作非常">
+<meta name="keywords" content="数据结构">
+<meta property="og:type" content="article">
+<meta property="og:title" content="前向星">
+<meta property="og:url" content="http://yoursite.com/2018/08/06/前向星/index.html">
 <meta property="og:site_name" content="Aytrwの日常">
+<meta property="og:description" content="前向星 介于邻接矩阵和邻接表之间的一种比较均衡的存储结构  为什么会有前向星 对于图的存储结构,我们通常使用两种储存结构:第一种：邻接矩阵 (Adjacency Matrix)邻接矩阵是一种非常占用空间的储存结构当图中有很多结点的时候,比方说23333个就得开一个数组A[23333][23333],不爆才怪！第二种：邻接表 (Adjacency List)邻接表虽然不占用多大空间但其的指针操作非常">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-08-07T11:45:54.392Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Aytrwの日常">
+<meta name="twitter:title" content="前向星">
+<meta name="twitter:description" content="前向星 介于邻接矩阵和邻接表之间的一种比较均衡的存储结构  为什么会有前向星 对于图的存储结构,我们通常使用两种储存结构:第一种：邻接矩阵 (Adjacency Matrix)邻接矩阵是一种非常占用空间的储存结构当图中有很多结点的时候,比方说23333个就得开一个数组A[23333][23333],不爆才怪！第二种：邻接表 (Adjacency List)邻接表虽然不占用多大空间但其的指针操作非常">
 
 
 
@@ -115,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/08/06/前向星/"/>
 
 
 
 
 
-  <title>Aytrwの日常</title>
+  <title>前向星 | Aytrwの日常</title>
   
 
 
@@ -140,8 +145,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -244,9 +248,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -276,9 +280,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/08/06/前向星/" itemprop="url">前向星</a></h1>
+          <h1 class="post-title" itemprop="name headline">前向星</h1>
         
 
         <div class="post-meta">
@@ -350,9 +352,7 @@
       
 
       
-        
-          
-            <h1 id="前向星"><a href="#前向星" class="headerlink" title="前向星"></a>前向星</h1><blockquote>
+        <h1 id="前向星"><a href="#前向星" class="headerlink" title="前向星"></a>前向星</h1><blockquote>
 <p>介于邻接矩阵和邻接表之间的一种比较均衡的存储结构</p>
 </blockquote>
 <h1 id="为什么会有前向星"><a href="#为什么会有前向星" class="headerlink" title="为什么会有前向星"></a>为什么会有前向星</h1><blockquote>
@@ -380,8 +380,6 @@
 <p>到这里构造就结束了,当然我们还需要遍历一波<br>假设结点数为n,边数为m,并且边的信息已经输入好了<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++)&#123;</span><br><span class="line">  <span class="keyword">for</span>(<span class="keyword">int</span> j=head[i];ed[j].from == i &amp;&amp; j&lt;=m;j++)&#123;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"边的起点"</span> &lt;&lt; ed[i].start &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"边的终点"</span> &lt;&lt; ed[i].end &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"边的权值"</span> &lt;&lt; ed[i].w &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 </blockquote>
 
-          
-        
       
     </div>
     
@@ -396,14 +394,20 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/数据结构/" rel="tag"># 数据结构</a>
+          
+        </div>
+      
+
+      
+      
+      
 
       
 
       
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -413,10 +417,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -424,6 +429,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -444,8 +453,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -505,6 +523,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前向星"><span class="nav-number">1.</span> <span class="nav-text">前向星</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#为什么会有前向星"><span class="nav-number">2.</span> <span class="nav-text">为什么会有前向星</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#前向星的表示方法"><span class="nav-number">3.</span> <span class="nav-text">前向星的表示方法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#前向星构造的代码实现"><span class="nav-number">3.0.1.</span> <span class="nav-text">前向星构造的代码实现</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -652,6 +686,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
