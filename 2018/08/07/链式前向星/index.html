@@ -88,7 +88,7 @@
 <meta property="og:description" content="前向星虽然好,但实际上时间复杂度也很高,因为有排序的过程假设边的个数是n,那么时间复杂度也要达到O(nlogn)于是大牛们为了避免排序,发明了一个类似邻接表的前向星一种叫做链式前向星（Linked Forward Star）的数据结构就诞生了">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yoursite.com/2018/08/07/链式前向星/pic.png">
-<meta property="og:updated_time" content="2018-08-11T09:53:00.830Z">
+<meta property="og:updated_time" content="2018-08-11T10:06:03.701Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="链式前向星">
 <meta name="twitter:description" content="前向星虽然好,但实际上时间复杂度也很高,因为有排序的过程假设边的个数是n,那么时间复杂度也要达到O(nlogn)于是大牛们为了避免排序,发明了一个类似邻接表的前向星一种叫做链式前向星（Linked Forward Star）的数据结构就诞生了">
@@ -355,7 +355,7 @@
 
       
         <blockquote>
-<p>前向星虽然好,但实际上时间复杂度也很高,因为有排序的过程<br>假设边的个数是n,那么时间复杂度也要达到O(nlogn)<br>于是大牛们为了避免排序,发明了一个类似邻接表的前向星<br>一种叫做<code>链式前向星（Linked Forward Star）</code>的数据结构就诞生了<a id="more"></a></p>
+<p>前向星虽然好,但实际上时间复杂度也很高,因为有排序的过程<br>假设边的个数是n,那么时间复杂度也要达到O(nlogn)<br>于是大牛们为了避免排序,发明了一个类似邻接表的前向星<br>一种叫做链式前向星（Linked Forward Star）的数据结构就诞生了<a id="more"></a></p>
 </blockquote>
 <h1 id="命名和来历"><a href="#命名和来历" class="headerlink" title="命名和来历"></a>命名和来历</h1><p>根据度娘的结果,链式前向星似乎是一个叫Malash的人命名的<br>这个数据结构据推测是由Jason911或者其他神牛发明的<br>而Malash只是命名,似乎也有叫<code>next数组前向星</code>的<br>这点是在 <code>https://malash.me/200910/linked-forward-star/</code> 偶然发现的<br>本文也是基于这篇文章的,当然也参考了一些其他的博客<br><strong>不得不说对这些大牛只能%%%%%了</strong></p>
 <h1 id="构造与模拟"><a href="#构造与模拟" class="headerlink" title="构造与模拟"></a>构造与模拟</h1><p>首先,为了避免排序,我们就得在边集上下功夫<br>我们可以在每条边里加一个属性<code>next</code><br>edge[i].next表示与第i条边同起点的下一条边的位置</p>
