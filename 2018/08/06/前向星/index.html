@@ -256,108 +256,24 @@
 
   <div id="posts" class="posts-expand">
     
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/06/前向星/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Aytrw">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Aytrwの日常">
-    </span>
-
     
+    
+    <div class="post-block page">
       <header class="post-header">
 
-        
-        
-          <h1 class="post-title" itemprop="name headline">前向星</h1>
-        
+	<h1 class="post-title" itemprop="name headline">前向星</h1>
 
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-06T19:44:57+08:00">
-                2018-08-06
-              </time>
-            
 
-            
 
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/图论/" itemprop="url" rel="index">
-                    <span itemprop="name">图论</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
+</header>
 
       
       
-
       
-        <h1 id="前向星是什么"><a href="#前向星是什么" class="headerlink" title="前向星是什么"></a>前向星是什么</h1><blockquote>
+      <div class="post-body">
+        
+        
+          <h1 id="前向星是什么"><a href="#前向星是什么" class="headerlink" title="前向星是什么"></a>前向星是什么</h1><blockquote>
 <p>是一种介于邻接矩阵和邻接表之间的一种比较均衡的<code>存储结构</code><br>是一种特殊的<code>边集数组</code>,其中每条边按照<code>起点</code>排序<br>并且记录下<strong>以某个点为起点的所有边</strong>在数组中的<code>起始位置</code></p>
 </blockquote>
 <h1 id="前向星有什么用"><a href="#前向星有什么用" class="headerlink" title="前向星有什么用"></a>前向星有什么用</h1><blockquote>
@@ -385,63 +301,15 @@
 <p>代码是写出来了,但总觉得有些不理解,下面给出一个例子<br>给定如图的一张无向图：<br><img src="/2018/08/06/前向星/pic.png" alt="1"><br><em>上面是在github博客的第一张图,以后的图片也许也会参照这种样式</em><br>首先,对于ed数组来说,经过排序以后的情况应该是这样的:<br><img src="/2018/08/06/前向星/pic2.png" alt="1"><br>随后,对于head数组来说:<br>首先利用memset将数组元素设置为-1<br>随后head[ed[0].start] = 0<br>ed[0].start表示第一个结点<br>这里的第一个结点是1,因此这句话表示head[1] = 0<br>也就是前面说的<code>以1为起点的第一条边在ed中的下标是0</code><br>随后将遍历条件设为ed[i].start != ed[i-1].start<br>也就是只要起点改变了,就会保存其在ed中的下标<br>因为只要一改变,表示的边必定会是第一条边<br>这里给出遍历完的head数组<br><img src="/2018/08/06/前向星/picIII.png" alt="1"><br>最后我们打印一下构造完的前向星<br>其中内存循环的遍历条件表示：<br>初始时j是以i为起点的第一条边,然后只要起点不是i了<br>又或者边数已经达到了,那么循环就会结束<br>最后画一下打印出来的东西：<br><img src="/2018/08/06/前向星/pic4.png" alt="1"><br>是不是像星星一样?所以知道为什么叫前向星了吧XD</p>
 </blockquote>
 
+        
+      </div>
+      
+      
       
     </div>
     
     
     
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-        <div class="post-tags">
-          
-            <a href="/tags/数据结构/" rel="tag"># 数据结构</a>
-          
-        </div>
-      
-
-      
-      
-      
-
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-          </div>
-
-          <span class="post-nav-divider"></span>
-
-          <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/08/07/链式前向星/" rel="prev" title="链式前向星">
-                链式前向星 <i class="fa fa-chevron-right"></i>
-              </a>
-            
-          </div>
-        </div>
-      
-
-      
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-
-    <div class="post-spread">
-      
-    </div>
   </div>
 
 
