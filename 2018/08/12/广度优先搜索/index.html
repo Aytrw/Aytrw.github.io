@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="二次元," />
+  <meta name="keywords" content="搜索," />
 
 
 
@@ -79,21 +79,20 @@
 
 
 
-<meta name="description" content="随着时代的进步，人们总是会想出一些新奇的东西然而，对于热爱日本动画的人们，总是觉得2d的动画无法满足他们同时，3D的动画却又不乏缺乏了一些2D动画所不具备的手绘风格于是人们就发明了一种新的技术 live2d">
-<meta name="keywords" content="二次元">
+<meta name="description" content="对于一张图的遍历，我们常常要用用到搜索算法而广度优先搜索（BFS）是其中的一种搜索方法与DFS不同，是一层一层地搜索下去，下面，我们将详细讨论">
+<meta name="keywords" content="搜索">
 <meta property="og:type" content="article">
-<meta property="og:title" content="初识live2d">
-<meta property="og:url" content="http://yoursite.com/2018/08/09/初识live2d/index.html">
+<meta property="og:title" content="广度优先搜索">
+<meta property="og:url" content="http://yoursite.com/2018/08/12/广度优先搜索/index.html">
 <meta property="og:site_name" content="Aytrwの日常">
-<meta property="og:description" content="随着时代的进步，人们总是会想出一些新奇的东西然而，对于热爱日本动画的人们，总是觉得2d的动画无法满足他们同时，3D的动画却又不乏缺乏了一些2D动画所不具备的手绘风格于是人们就发明了一种新的技术 live2d">
+<meta property="og:description" content="对于一张图的遍历，我们常常要用用到搜索算法而广度优先搜索（BFS）是其中的一种搜索方法与DFS不同，是一层一层地搜索下去，下面，我们将详细讨论">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://yoursite.com/2018/08/09/初识live2d/info.png">
-<meta property="og:image" content="http://yoursite.com/2018/08/09/初识live2d/pic.png">
-<meta property="og:updated_time" content="2018-08-11T10:20:47.183Z">
+<meta property="og:image" content="http://yoursite.com/2018/08/12/广度优先搜索/pic.png">
+<meta property="og:updated_time" content="2018-08-12T13:41:49.306Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="初识live2d">
-<meta name="twitter:description" content="随着时代的进步，人们总是会想出一些新奇的东西然而，对于热爱日本动画的人们，总是觉得2d的动画无法满足他们同时，3D的动画却又不乏缺乏了一些2D动画所不具备的手绘风格于是人们就发明了一种新的技术 live2d">
-<meta name="twitter:image" content="http://yoursite.com/2018/08/09/初识live2d/info.png">
+<meta name="twitter:title" content="广度优先搜索">
+<meta name="twitter:description" content="对于一张图的遍历，我们常常要用用到搜索算法而广度优先搜索（BFS）是其中的一种搜索方法与DFS不同，是一层一层地搜索下去，下面，我们将详细讨论">
+<meta name="twitter:image" content="http://yoursite.com/2018/08/12/广度优先搜索/pic.png">
 
 
 
@@ -123,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/08/09/初识live2d/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/08/12/广度优先搜索/"/>
 
 
 
 
 
-  <title>初识live2d | Aytrwの日常</title>
+  <title>广度优先搜索 | Aytrwの日常</title>
   
 
 
@@ -266,7 +265,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/09/初识live2d/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/12/广度优先搜索/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Aytrw">
@@ -283,7 +282,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">初识live2d</h1>
+          <h1 class="post-title" itemprop="name headline">广度优先搜索</h1>
         
 
         <div class="post-meta">
@@ -295,8 +294,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-09T22:48:25+08:00">
-                2018-08-09
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-12T20:45:40+08:00">
+                2018-08-12
               </time>
             
 
@@ -318,8 +317,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/live2d/" itemprop="url" rel="index">
-                    <span itemprop="name">live2d</span>
+                  <a href="/categories/图论/" itemprop="url" rel="index">
+                    <span itemprop="name">图论</span>
                   </a>
                 </span>
 
@@ -355,14 +354,15 @@
       
 
       
-        <p><img src="/2018/08/09/初识live2d/info.png" alt="1"></p>
-<blockquote>
-<p>随着时代的进步，人们总是会想出一些新奇的东西<br>然而，对于热爱日本动画的人们，总是觉得2d的动画无法满足他们<br>同时，3D的动画却又不乏缺乏了一些2D动画所不具备的手绘风格<br>于是人们就发明了一种新的技术 live2d<a id="more"></a><br>而我对于live2d第一次的认知是来自战舰少女R中的大淀的立绘<br>通过各种渠道，我最终找到了答案，这种类型的立绘便是利用了live2d技术<br>如果要我形容一下live2d技术的话，我会引用live2d吧的描述:</p>
+        <blockquote>
+<p>对于一张图的遍历，我们常常要用用到搜索算法<br>而广度优先搜索（BFS）是其中的一种搜索方法<br>与DFS不同，是一层一层地搜索下去，下面，我们将详细讨论<a id="more"></a></p>
 </blockquote>
-<div class="note success">将2D转换为3D表现的黑魔法”<p></p></div>
+<h1 id="核心思想"><a href="#核心思想" class="headerlink" title="核心思想"></a>核心思想</h1><p>从一张图的某个顶点v出发，访问了v之后依此访问其<code>未访问</code>的邻接点<br>然后再从v的每个邻接点出发，去访问他们的邻接点，直到所有邻接点都被访问<br>如果此时图仍有结点未被访问，则应另选一个未访问的顶点作为起始点<br>重复上述过程，直至图<code>所有顶点</code>都被访问</p>
+<h1 id="图解与实现"><a href="#图解与实现" class="headerlink" title="图解与实现"></a>图解与实现</h1><p>下面，我将结合图例，来解释BFS算法<br><img src="/2018/08/12/广度优先搜索/pic.png" alt="1">以上是给定图的BFS搜索<br>可以看出，BFS是按照红色的层，一层一层地搜索的<br>下面我将详细写出他的过程：</p>
+<div class="note default"><p>初始：1号顶点作为起点<br>1号顶点的邻接点是2，4，5号顶点，2，4，5号顶点访问完毕<br>2，4，5号顶点的邻接点是3，6，9，8号顶点，访问完毕<br>3，8号顶点的邻接点是7，10号顶点，访问完毕<br>到此，图中不存在未访问的顶点，BFS算法执行完毕<br></p></div>可以看出，图中红色的层就是他的访问顺序<br>当然，实际操作起来很不方便，因此我们需要借用一些辅助的数据结构<br>下面，我将用自然语言描述BFS的实现过程<br><div class="note default"><p>初始时，我们构造一个队列q和数组vis<br>同时，我们将一个顶点v作为起点，加入队列，将vis初始化为false，表示未访问<br>Ⅰ.我们访问队首元素h，并在vis中标记为true，v出队<br>Ⅱ.遍历与顶点h相邻并且未被访问的所有顶点，并依此加入队列中<br>重复执行Ⅰ和Ⅱ的操作，直到队列为空<br></p></div> 
 
-<h1 id="live2d是什么"><a href="#live2d是什么" class="headerlink" title="live2d是什么"></a>live2d是什么</h1><p>live2d到底是什么，我查阅了很多资料，有了一定的认识<br>首先，live2d是一种绘图渲染技术，由Cybernoids公司开发<br>但现在这个公司改名叫live2d了<br>真正的live2d实际上有2个分支，<code>Cubism</code>和<code>Euclid</code><br>cubism是最先发布的，但似乎只支持30°左右的旋转<br>而Euclid是最近才出现的，据说可以360°的旋转，简直就是3d???<br>live2d的应用还是比较广泛的<br>可以用于游戏，广告，动画，电影等<br>举个例子，你们最喜欢的<code>Nekopara</code>就是采用了这种技术<br><img src="/2018/08/09/初识live2d/pic.png" alt="1">想玩的请自便(大雾)<br>再举个例子，如果你是利用PC或者手机的桌面版网站浏览本博客的话<br>你应该可以看到一只可爱的看板娘<br>当然这也是采用了live2d技术的，模型的取用是来自游戏<code>药水制作师</code>tia的模型<br>如果游戏立绘采用live2d技术，那么应该会大大增色不少<br>相对的，如果你想要属于自己的模型，请别人做模型的话也是要花大价钱的</p>
-<div class="note primary">日后谈：<br>我的live2d分类是基于日志一类的，不会写的像教程一样<br>因此只会写一些自己的见解，亦或者是当前的研究进度<br>接下来的文章我会以live2d的原理，技术，建模等方面为主<br>也许时不时会发一下研究进度之类的，这里就不再过多赘述<br><p></p></div>
+<h1 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h1><p>由于BFS不难理解，我这里直接上代码<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">queue</span>&lt;<span class="keyword">int</span>&gt; q; <span class="comment">//参考STL的队列，这里不多说</span></span><br><span class="line"><span class="keyword">int</span> vis[<span class="number">2333</span>][<span class="number">2333</span>];</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">BFS</span><span class="params">(<span class="keyword">int</span> start)</span></span>&#123;</span><br><span class="line">	q.push(start);</span><br><span class="line">	<span class="keyword">while</span>(!q.empty())&#123;<span class="comment">//队列不为空的时候</span></span><br><span class="line">		<span class="keyword">int</span> h = q.front(); <span class="comment">//取出队首元素</span></span><br><span class="line">		访问(h);</span><br><span class="line">		q.pop(); <span class="comment">//弹出h</span></span><br><span class="line">		<span class="comment">//假如我是用链式前向星存储的</span></span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = head[h]; i != <span class="number">-1</span>; i = edge[i].next)&#123; </span><br><span class="line">			<span class="keyword">if</span>(!vis[i])&#123; </span><br><span class="line">				vis[i] = <span class="literal">true</span>;</span><br><span class="line">				bfs(i);	</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;		</span><br><span class="line">	&#125; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+
       
     </div>
     
@@ -379,7 +379,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/二次元/" rel="tag"># 二次元</a>
+            <a href="/tags/搜索/" rel="tag"># 搜索</a>
           
         </div>
       
@@ -392,8 +392,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/08/07/链式前向星/" rel="next" title="链式前向星">
-                <i class="fa fa-chevron-left"></i> 链式前向星
+              <a href="/2018/08/11/路径压缩/" rel="next" title="路径压缩">
+                <i class="fa fa-chevron-left"></i> 路径压缩
               </a>
             
           </div>
@@ -401,10 +401,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/08/10/SPFA/" rel="prev" title="SPFA">
-                SPFA <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -542,7 +538,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#live2d是什么"><span class="nav-number">1.</span> <span class="nav-text">live2d是什么</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#核心思想"><span class="nav-number">1.</span> <span class="nav-text">核心思想</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#图解与实现"><span class="nav-number">2.</span> <span class="nav-text">图解与实现</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#代码实现"><span class="nav-number">3.</span> <span class="nav-text">代码实现</span></a></li></ol></div>
             
 
           </div>
