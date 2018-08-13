@@ -87,10 +87,12 @@
 <meta property="og:site_name" content="Aytrwの日常">
 <meta property="og:description" content="tarjan算法是一种求解有向图强连通分量的线性时间的算法为了了解tarjan算法，我们先需要了解以下几个概念">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-08-13T07:36:58.653Z">
+<meta property="og:image" content="http://yoursite.com/2018/08/13/tarjan算法/pic.png">
+<meta property="og:updated_time" content="2018-08-13T07:58:20.858Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="tarjan算法">
 <meta name="twitter:description" content="tarjan算法是一种求解有向图强连通分量的线性时间的算法为了了解tarjan算法，我们先需要了解以下几个概念">
+<meta name="twitter:image" content="http://yoursite.com/2018/08/13/tarjan算法/pic.png">
 
 
 
@@ -352,9 +354,13 @@
       
 
       
-        <p>tarjan算法是一种求解有向图强连通分量的线性时间的算法<br>为了了解tarjan算法，我们先需要了解以下几个概念<a id="more"></a></p>
+        <blockquote>
+<p>tarjan算法是一种求解有向图强连通分量的线性时间的算法<br>为了了解tarjan算法，我们先需要了解以下几个概念<a id="more"></a></p>
+</blockquote>
 <h1 id="引入概念"><a href="#引入概念" class="headerlink" title="引入概念"></a>引入概念</h1><p>强连通(Strongly Connected)：</p>
-<div class="note default"><p>在一张有向图G中，设a，b∈G，且a有一条路可以走到b，而b也可以走到a<br></p></div>强连通图(Strongly Connected Graph)：<br><div class="note default"><p>在一张有向图G中，∀a，b∈G都强连通<br></p></div>强连通分量(Strongly Connected Components)：<br><div class="note default"><p>在一张有向图G中，有一张子图H，且∀a，b∈H都强连通<br>我们就将H称为强连通分量</p></div>
+<p><div class="note info"><p>在一张有向图G中，设a，b∈G，且a有一条路可以走到b，而b也可以走到a<br></p></div>强连通图(Strongly Connected Graph)：</p>
+<p><div class="note info"><p>在一张有向图G中，∀a，b∈G都强连通<br></p></div>强连通分量(Strongly Connected Components)：</p>
+<p><div class="note info"><p>在一张有向图G中，有一张子图H，且∀a，b∈H都强连通<br>我们就将H称为强连通分量</p></div><br>下面我将给出一个具体的例子：<br><img src="/2018/08/13/tarjan算法/pic.png" alt="1">给定如图所示的一张有向图<br>在这张有向图中，我们可以看到由结点1，3，4，5构成的子图中<br>任意两个结点都是强连通的，因此，这张子图就是他的强连通分量</p>
 
       
     </div>
