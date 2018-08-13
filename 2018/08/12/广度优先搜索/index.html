@@ -88,7 +88,7 @@
 <meta property="og:description" content="对于一张图的遍历，我们常常要用用到搜索算法而广度优先搜索（BFS）是其中的一种搜索方法与DFS不同，是一层一层地搜索下去，下面，我们将详细讨论">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yoursite.com/2018/08/12/广度优先搜索/pic.png">
-<meta property="og:updated_time" content="2018-08-12T13:41:49.306Z">
+<meta property="og:updated_time" content="2018-08-13T08:05:10.797Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="广度优先搜索">
 <meta name="twitter:description" content="对于一张图的遍历，我们常常要用用到搜索算法而广度优先搜索（BFS）是其中的一种搜索方法与DFS不同，是一层一层地搜索下去，下面，我们将详细讨论">
@@ -362,7 +362,7 @@
 <div class="note default"><p>初始：1号顶点作为起点<br>1号顶点的邻接点是2，4，5号顶点，2，4，5号顶点访问完毕<br>2，4，5号顶点的邻接点是3，6，9，8号顶点，访问完毕<br>3，8号顶点的邻接点是7，10号顶点，访问完毕<br>到此，图中不存在未访问的顶点，BFS算法执行完毕<br></p></div>可以看出，图中红色的层就是他的访问顺序<br>当然，实际操作起来很不方便，因此我们需要借用一些辅助的数据结构<br>下面，我将用自然语言描述BFS的实现过程<br><div class="note default"><p>初始时，我们构造一个队列q和数组vis<br>同时，我们将一个顶点v作为起点，加入队列，将vis初始化为false，表示未访问<br>Ⅰ.我们访问队首元素h，并在vis中标记为true，v出队<br>Ⅱ.遍历与顶点h相邻并且未被访问的所有顶点，并依此加入队列中<br>重复执行Ⅰ和Ⅱ的操作，直到队列为空<br></p></div> 
 
 <h1 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h1><p>由于BFS不难理解，我这里直接上代码<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">queue</span>&lt;<span class="keyword">int</span>&gt; q; <span class="comment">//参考STL的队列，这里不多说</span></span><br><span class="line"><span class="keyword">int</span> vis[<span class="number">2333</span>][<span class="number">2333</span>];</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">BFS</span><span class="params">(<span class="keyword">int</span> start)</span></span>&#123;</span><br><span class="line">	q.push(start);</span><br><span class="line">	<span class="keyword">while</span>(!q.empty())&#123;<span class="comment">//队列不为空的时候</span></span><br><span class="line">		<span class="keyword">int</span> h = q.front(); <span class="comment">//取出队首元素</span></span><br><span class="line">		访问(h);</span><br><span class="line">		q.pop(); <span class="comment">//弹出h</span></span><br><span class="line">		<span class="comment">//假如我是用链式前向星存储的</span></span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = head[h]; i != <span class="number">-1</span>; i = edge[i].next)&#123; </span><br><span class="line">			<span class="keyword">if</span>(!vis[i])&#123; </span><br><span class="line">				vis[i] = <span class="literal">true</span>;</span><br><span class="line">				bfs(i);	</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;		</span><br><span class="line">	&#125; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-
+<div class="note warning">本文仅供学习参考之用，转载请注明作者<br>本文由于只是作者本人的理解，如有错误在此将表示歉意，并欢迎指出错误<br><p></p></div>
       
     </div>
     
