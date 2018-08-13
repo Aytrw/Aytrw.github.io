@@ -88,7 +88,7 @@
 <meta property="og:description" content="tarjan算法是一种求解有向图强连通分量的线性时间的算法为了了解tarjan算法，我们先需要了解以下几个概念">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yoursite.com/2018/08/13/tarjan算法/pic.png">
-<meta property="og:updated_time" content="2018-08-13T08:16:18.791Z">
+<meta property="og:updated_time" content="2018-08-13T11:59:10.685Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="tarjan算法">
 <meta name="twitter:description" content="tarjan算法是一种求解有向图强连通分量的线性时间的算法为了了解tarjan算法，我们先需要了解以下几个概念">
@@ -358,7 +358,7 @@
 <p>tarjan算法是一种求解有向图强连通分量的线性时间的算法<br>为了了解tarjan算法，我们先需要了解以下几个概念<a id="more"></a></p>
 </blockquote>
 <h1 id="引入概念"><a href="#引入概念" class="headerlink" title="引入概念"></a>引入概念</h1><p>强连通(Strongly Connected)：</p>
-<div class="note info"><p>在一张有向图G中，设a，b∈G，且a有一条路可以走到b，而b也可以走到a<br></p></div>强连通图(Strongly Connected Graph)：<br><div class="note info"><p>在一张有向图G中，∀a，b∈G都强连通<br></p></div>强连通分量(Strongly Connected Components)：<br><div class="note info"><p>在一张有向图G中，有一张子图H，且∀a，b∈H都强连通<br>我们就将H称为强连通分量</p></div><br>下面我将给出一个具体的例子：<br><img src="/2018/08/13/tarjan算法/pic.png" alt="1">给定如图所示的一张有向图<br>在这张有向图中，我们可以看到由结点1，3，4，5构成的子图中<br>任意两个结点都是强连通的，因此，这张子图就是他的强连通分量<br><br># 算法详解<br><br><div class="note warning">本文仅供学习参考之用，转载请注明作者<br>本文只是作者个人理解，如有错误在此将表示歉意，并欢迎指出<br><p></p></div>
+<div class="note info"><p>在一张有向图G中，设a，b∈G，且a有一条路可以走到b，而b也可以走到a<br></p></div>强连通图(Strongly Connected Graph)：<br><div class="note info"><p>在一张有向图G中，∀a，b∈G都强连通<br></p></div>强连通分量(Strongly Connected Components)：<br><div class="note info"><p>在一张有向图G中，有一张子图H，且∀a，b∈H都强连通<br>我们就将H称为强连通分量</p></div><br>下面我将给出一个具体的例子：<br><img src="/2018/08/13/tarjan算法/pic.png" alt="1">给定如图所示的一张有向图<br>在这张有向图中，我们可以看到由结点1，3，4，5构成的子图中<br>任意两个顶点都是强连通的，因此，这张子图就是他的强连通分量<br><br># 算法详解<br>Tarjan算法是基于DFS的算法，每个<code>强连通分量</code>都是<code>搜索树</code>中的一棵<code>子树</code><br>对于这一张有向图来说，就是一棵<code>完整的搜索树</code><br>为了方便操作，我们将每个点设置两个参数<br>1.DFN[i]，表示这个点搜索的次序编号(时间戳)<br><div class="note info">时间戳：表示第几个被搜索到的，每个点的时间戳都不一样<p></p></div><br>2.LOW[i]，作为每个点在这棵树中最小子树的根<br>我们选用<code>堆栈</code>来储存整个强连通分量，如果有新结点就进栈，如果该点有出度就继续找<br><br><br><div class="note warning">本文仅供学习参考之用，转载请注明作者<br>本文只是作者个人理解，如有错误在此将表示歉意，并欢迎指出<br><p></p></div>
       
     </div>
     
