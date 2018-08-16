@@ -88,7 +88,8 @@
 <meta property="og:description" content="动态规划作为运筹学的一个分支，是让我们初学时比较头疼的算法对于求解最优解的问题而言，我们通常要使用动态规划算法下面，我们将详解动态规划（以下简称DP）">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yoursite.com/2018/08/16/动态规划/info.png">
-<meta property="og:updated_time" content="2018-08-16T07:17:32.940Z">
+<meta property="og:image" content="http://yoursite.com/2018/08/16/动态规划/pic1.png">
+<meta property="og:updated_time" content="2018-08-16T07:39:41.862Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="动态规划">
 <meta name="twitter:description" content="动态规划作为运筹学的一个分支，是让我们初学时比较头疼的算法对于求解最优解的问题而言，我们通常要使用动态规划算法下面，我们将详解动态规划（以下简称DP）">
@@ -358,6 +359,8 @@
 <blockquote>
 <p>动态规划作为运筹学的一个分支，是让我们初学时比较头疼的算法<br>对于求解最优解的问题而言，我们通常要使用动态规划算法<br>下面，我们将详解动态规划（以下简称DP）<a id="more"></a></p>
 </blockquote>
+<h1 id="简单的实例"><a href="#简单的实例" class="headerlink" title="简单的实例"></a>简单的实例</h1><p>为了引出DP，我们先来看一个例子<br>我们给定一些<code>起点Sn</code>和<code>终点Tn</code><br>每条边上的蓝字表示两结点间的<code>距离</code><br>我们要求某起点到某终点的<code>最短路径</code><br><img src="/2018/08/16/动态规划/pic1.png" alt="1"><br>当然，我们规定只允许往右走<br><strong>对于这样的问题，我们该如何求解呢？</strong><br>如果你没有学过DP，你首先应该想到的是枚举<br>我们将其称为<code>暴力算法</code></p>
+<div class="note info">如果使用暴力算法求解，我们可以把每一条路径列举出来<br>然后逐一比较，找出最小的那条即可<br><p></p></div><br>对于这样的算法，如果结点的个数少的话，是可行的<br>但是如果数据量很大，比如网络的层数有k层<br>那么，路径的数量也要达到2^k条，显然会超时<br><br><div class="note warning">本文仅供学习参考之用，转载请注明作者<br>本文只是作者个人理解，如有错误在此将表示歉意，并欢迎指出<br><p></p></div>
 
       
     </div>
@@ -450,8 +453,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -515,6 +527,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#简单的实例"><span class="nav-number">1.</span> <span class="nav-text">简单的实例</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
