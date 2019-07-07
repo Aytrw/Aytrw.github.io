@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="排序," />
 
 
 
@@ -79,13 +79,18 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Aytrwの日常">
-<meta property="og:url" content="http://yoursite.com/tags/数据结构/index.html">
+<meta name="description" content="归并排序是一种较为高效的排序方法，时间复杂度为O(nlogn)归并排序是采用了分治的方法进行实现，下面，我们将详细讨论 实现过程首先，我们来看一个例子现在给定两个数组left[] = {3,9,10,15}，right = {4,6,8,9}我们要将这两个数组合并成一个大数组arr怎么实现呢？我们设两个光标，L = 1 和 R = 8，表示指向首元素和末元素再设一个光标mid = ⌊(0+7)/2">
+<meta name="keywords" content="排序">
+<meta property="og:type" content="article">
+<meta property="og:title" content="归并排序">
+<meta property="og:url" content="http://yoursite.com/2018/08/13/归并排序/index.html">
 <meta property="og:site_name" content="Aytrwの日常">
+<meta property="og:description" content="归并排序是一种较为高效的排序方法，时间复杂度为O(nlogn)归并排序是采用了分治的方法进行实现，下面，我们将详细讨论 实现过程首先，我们来看一个例子现在给定两个数组left[] = {3,9,10,15}，right = {4,6,8,9}我们要将这两个数组合并成一个大数组arr怎么实现呢？我们设两个光标，L = 1 和 R = 8，表示指向首元素和末元素再设一个光标mid = ⌊(0+7)/2">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-08-13T15:28:53.332Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Aytrwの日常">
+<meta name="twitter:title" content="归并排序">
+<meta name="twitter:description" content="归并排序是一种较为高效的排序方法，时间复杂度为O(nlogn)归并排序是采用了分治的方法进行实现，下面，我们将详细讨论 实现过程首先，我们来看一个例子现在给定两个数组left[] = {3,9,10,15}，right = {4,6,8,9}我们要将这两个数组合并成一个大数组arr怎么实现呢？我们设两个光标，L = 1 和 R = 8，表示指向首元素和末元素再设一个光标mid = ⌊(0+7)/2">
 
 
 
@@ -115,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/tags/数据结构/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/08/13/归并排序/"/>
 
 
 
 
 
-  <title>标签: 数据结构 | Aytrwの日常</title>
+  <title>归并排序 | Aytrwの日常</title>
   
 
 
@@ -140,7 +145,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -244,138 +249,175 @@
           <div id="content" class="content">
             
 
+  <div id="posts" class="posts-expand">
+    
+
+  
+
   
   
   
-  <div class="post-block tag">
-
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>数据结构<small>标签</small>
-        </h1>
-      </div>
-
-      
-        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/13/归并排序/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Aytrw">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Aytrwの日常">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2018/08/13/tarjan算法/" itemprop="url">
-              
-                <span itemprop="name">tarjan算法</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">归并排序</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-08-13T14:44:58+08:00"
-              content="2018-08-13" >
-          08-13
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-13T22:59:53+08:00">
+                2018-08-13
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/算法/" itemprop="url" rel="index">
+                    <span itemprop="name">算法</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/08/10/SPFA/" itemprop="url">
-              
-                <span itemprop="name">SPFA</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-08-10T18:43:36+08:00"
-              content="2018-08-10" >
-          08-10
-        </time>
-      </div>
-
-    </header>
-  </article>
-
+      
 
       
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/08/07/链式前向星/" itemprop="url">
-              
-                <span itemprop="name">链式前向星</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-08-07T22:32:42+08:00"
-              content="2018-08-07" >
-          08-07
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-      
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/08/06/前向星/" itemprop="url">
-              
-                <span itemprop="name">前向星</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-08-06T19:44:57+08:00"
-              content="2018-08-06" >
-          08-06
-        </time>
-      </div>
-
-    </header>
-  </article>
-
+        <p>归并排序是一种较为高效的排序方法，时间复杂度为O(nlogn)<br>归并排序是采用了分治的方法进行实现，下面，我们将详细讨论</p>
+<h1 id="实现过程"><a href="#实现过程" class="headerlink" title="实现过程"></a>实现过程</h1><p>首先，我们来看一个例子<br>现在给定两个数组left[] = {3,9,10,15}，right = {4,6,8,9}<br>我们要将这两个数组合并成一个大数组arr<br>怎么实现呢？<br>我们设两个光标，<code>L = 1</code> 和 <code>R = 8</code>，表示指向<code>首元素</code>和<code>末元素</code><br>再设一个光标<code>mid = ⌊(0+7)/2⌋ = 3</code> ，表示指向<code>中间位置</code></p>
+<p><div class="note info">符号⌊⌋表示向下取整，即小于x的最大整数<p></p></div><br>我们还需要获得left和right各自的长度<br>由于mid是指向的中间位置，于是left的长度就等于mid-L+1，<br>同理，right的长度等于R-mid<br>这一步不难理解，只要代入数据分析一下即可<br>当然获取长度可以省去，我们可以利用STL的vector，但这里不使用<br>然后，我们利用光标的操作，将left和right的元素copty到arr里去<br>接下来我将给出代码：<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">merge</span><span class="params">(<span class="keyword">int</span> arr[], <span class="keyword">int</span> L, <span class="keyword">int</span> mid, <span class="keyword">int</span> R)</span></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> leftsize = mid - L + <span class="number">1</span>;</span><br><span class="line">	<span class="keyword">int</span> rightsize = R - mid;</span><br><span class="line">	<span class="keyword">int</span> left[leftsize],right[rightsize];</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=L;i&lt;mid;i++)</span><br><span class="line">		left[i-L] = arr[i];</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=mid;i&lt;=R;i++)</span><br><span class="line">		right[i-M] = arr[i];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 
       
     </div>
+    
+    
+    
 
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/排序/" rel="tag"># 排序</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/08/13/tarjan算法/" rel="next" title="tarjan算法">
+                <i class="fa fa-chevron-left"></i> tarjan算法
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/08/16/动态规划/" rel="prev" title="动态规划">
+                动态规划 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -383,6 +425,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -405,8 +451,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -470,6 +525,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#实现过程"><span class="nav-number">1.</span> <span class="nav-text">实现过程</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -617,6 +688,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
@@ -674,26 +749,6 @@
   
 
   
-  
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-        tex2jax: {
-          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
-          processEscapes: true,
-          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-        }
-      });
-    </script>
-
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax(), i;
-        for (i=0; i < all.length; i += 1) {
-          all[i].SourceElement().parentNode.className += ' has-jax';
-        }
-      });
-    </script>
-    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
   
 
 
